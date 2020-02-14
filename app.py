@@ -14,7 +14,7 @@ def predict():
     final_features=[np.array(int_features)]
     prediction=model.predict(final_features)
     output=round(prediction[0],2)
-    return render_template('index3.html',prediction_text="Number ofn weekly Rides Should be {}".format(math.floor(output)))
+    return render_template('index3.html',prediction_text="Number of weekly Rides Should be {}".format(math.floor(output)))
     
 
 if __name__=='__main__':
